@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elepta Formations | Global Company Formation (UK · USA · Canada · India · Qatar · Saudi)</title>
+<meta name="description" content="Fully remote company formation in the UK, USA, Canada, India, Qatar and Saudi Arabia by Elepta Formations. Chat with us on WhatsApp or email info@elepta.com for a personal, transparent quote.">
+<meta name="keywords" content="company formation, UK LTD, US LLC, Canada incorporation, India Pvt Ltd, Qatar MISA, Saudi Arabia company setup, Elepta Formations">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Archivo:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ink:#0C1F1C; --ink-2:#122B25; --ink-3:#18362E;
+  --paper:#F6F1E5; --paper-2:#EFE7D3; --paper-3:#E6DCC4;
+  --brass:#C29A3B; --brass-soft:#E2C87E; --brass-dim:rgba(194,154,59,.35);
+  --seal:#B3432B;
+  --wa:#25D366; --wa-dark:#0A7A38;
+  --tx:#1C2522; --tx-soft:#4E5A54;
+  --tx-inv:#F3EDDD; --tx-inv-soft:#B9C4B9;
+  --line:rgba(12,31,28,.16); --line-inv:rgba(243,237,221,.16);
+  --shadow:0 18px 50px -18px rgba(12,31,28,.35);
+  --r:8px;
+  --disp:"Fraunces",Georgia,serif;
+  --body:"Archivo",system-ui,sans-serif;
+  --mono:"Spline Sans Mono",ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--paper);color:var(--tx);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+::selection{background:var(--brass);color:var(--ink)}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.container{width:min(1180px,92vw);margin-inline:auto}
+section{position:relative}
+.sec-pad{padding-block:clamp(72px,9vw,118px)}
+
+/* grain overlay */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:120;opacity:.05;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+/* ============ TYPE ============ */
+.label{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;display:flex;align-items:center;gap:12px;color:var(--brass)}
+.label::before{content:"";width:26px;height:1px;background:currentColor;flex:none}
+.h2{font-family:var(--disp);font-weight:500;font-size:clamp(2rem,4.4vw,3.3rem);line-height:1.06;letter-spacing:-.01em;margin-top:16px}
+.h2 em{font-style:italic;color:var(--brass)}
+.dark .h2 em{color:var(--brass-soft)}
+.lead{max-width:56ch;color:var(--tx-soft);font-size:1.05rem}
+.dark .lead{color:var(--tx-inv-soft)}
+.sec-head{max-width:720px;margin-bottom:clamp(36px,5vw,64px)}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:6px;font-weight:600;font-size:.95rem;letter-spacing:.01em;transition:transform .25s cubic-bezier(.2,.7,.2,1),background .25s,color .25s,box-shadow .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-wa{background:var(--wa);color:#06180C;box-shadow:0 10px 28px -10px rgba(37,211,102,.6)}
+.btn-wa:hover{background:#31E077}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ink:hover{background:var(--brass);color:var(--ink)}
+.btn-ghost{border:1px solid var(--line);color:inherit}
+.btn-ghost:hover{border-color:var(--brass);color:var(--brass)}
+.dark .btn-ghost{border-color:var(--line-inv)}
+.dark .btn-ghost:hover{border-color:var(--brass-soft);color:var(--brass-soft)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ============ TICKER ============ */
+.ticker{background:var(--ink);color:var(--brass-soft);overflow:hidden;border-bottom:1px solid var(--line-inv)}
+.ticker-track{display:flex;width:max-content;animation:tick 36s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;padding:11px 0;display:flex;align-items:center}
+.ticker i{font-style:normal;margin:0 26px;color:var(--brass);opacity:.6}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ============ HEADER ============ */
+header{position:sticky;top:0;z-index:100;background:transparent;transition:background .35s,box-shadow .35s,padding .35s}
+header.scrolled{background:rgba(246,241,229,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;transition:padding .35s}
+header.scrolled .nav{padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:38px;height:38px}
+.brand-name{font-family:var(--disp);font-size:1.3rem;font-weight:600;letter-spacing:.01em;line-height:1}
+.brand-sub{font-family:var(--mono);font-size:.58rem;letter-spacing:.34em;color:var(--brass);text-transform:uppercase;margin-top:3px}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--tx-soft);position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1.5px;background:var(--brass);transform:scaleX(0);transform-origin:right;transition:transform .3s}
+.nav-links a:hover{color:var(--tx)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-cta{display:flex;align-items:center;gap:16px}
+.burger{display:none;flex-direction:column;gap:5px;padding:8px;z-index:130}
+.burger span{width:24px;height:2px;background:var(--ink);transition:.3s}
+.mnav{position:fixed;inset:0;background:var(--ink);z-index:110;display:flex;flex-direction:column;justify-content:center;padding:8vw;gap:6px;opacity:0;pointer-events:none;transition:opacity .35s}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:var(--disp);font-size:clamp(2rem,8vw,3rem);color:var(--tx-inv);padding:8px 0;border-bottom:1px solid var(--line-inv);opacity:0;transform:translateY(16px);transition:opacity .4s,transform .4s}
+.mnav.open a{opacity:1;transform:none}
+.mnav a:hover{color:var(--brass-soft)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+body.locked{overflow:hidden}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);background:var(--paper)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);background:var(--paper)}
+
+/* ============ HERO ============ */
+.hero{padding:clamp(48px,6vw,84px) 0 clamp(64px,7vw,96px);overflow:hidden}
+.hero-globe{position:absolute;right:-14%;top:-24%;width:64vw;max-width:900px;opacity:.55;pointer-events:none;animation:spin 160s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,5vw,72px);align-items:center;position:relative}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin-bottom:22px;min-height:1.2em}
+.hero-title{font-family:var(--disp);font-weight:500;font-size:clamp(2.7rem,6.2vw,4.7rem);line-height:1.02;letter-spacing:-.015em}
+.hero-title em{font-style:italic;color:var(--brass)}
+.lm{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.lm>span{display:block;transform:translateY(112%);animation:lmUp 1s cubic-bezier(.2,.7,.15,1) forwards}
+.lm:nth-child(2)>span{animation-delay:.14s}
+@keyframes lmUp{to{transform:none}}
+.hero-sub{margin:26px 0 32px;max-width:52ch;color:var(--tx-soft);font-size:1.08rem}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-note{margin-top:22px;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;color:var(--tx-soft)}
+.hero-note b{color:var(--brass);font-weight:500}
+
+/* trust strip */
+.trust-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(40px,5vw,60px);border-radius:var(--r);overflow:hidden}
+.trust-strip div{background:var(--paper);padding:18px 20px;display:flex;gap:12px;align-items:center;font-size:.85rem;font-weight:500}
+.trust-strip svg{width:22px;height:22px;color:var(--brass);flex:none}
+
+/* certificate */
+.cert-wrap{perspective:1200px}
+.cert-tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.cert-tabs button{font-size:1.35rem;padding:8px 11px;border:1px solid var(--line);border-radius:6px;background:var(--paper);transition:transform .2s,border-color .2s,background .2s;line-height:1}
+.cert-tabs button:hover{transform:translateY(-3px)}
+.cert-tabs button[aria-pressed="true"]{border-color:var(--brass);background:var(--paper-2);box-shadow:0 6px 18px -8px var(--brass-dim)}
+.cert{background:linear-gradient(160deg,#FBF7EC,#F1E9D4);border:1px solid var(--brass-dim);border-radius:4px;padding:clamp(22px,3vw,34px);box-shadow:var(--shadow);position:relative;transform-style:preserve-3d;transition:transform .3s ease}
+.cert::before{content:"";position:absolute;inset:9px;border:1px solid var(--brass-dim);border-radius:2px;pointer-events:none}
+.cert.swap .cert-body{animation:certIn .45s ease}
+@keyframes certIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.cert-kicker{font-family:var(--mono);font-size:.66rem;letter-spacing:.32em;text-transform:uppercase;color:var(--brass);text-align:center}
+.cert-country{font-family:var(--disp);font-weight:600;font-size:clamp(1.7rem,3vw,2.3rem);text-align:center;margin:8px 0 2px;min-height:1.2em}
+.cert-flag{text-align:center;font-size:1.5rem}
+.cert-rule{display:flex;align-items:center;gap:12px;margin:16px 0}
+.cert-rule::before,.cert-rule::after{content:"";flex:1;height:1px;background:var(--brass-dim)}
+.cert-rule i{color:var(--brass);font-style:normal;font-size:.8rem}
+.cert-rows{display:grid;gap:9px}
+.cert-row{display:flex;justify-content:space-between;gap:16px;font-size:.86rem;border-bottom:1px dashed rgba(12,31,28,.14);padding-bottom:8px}
+.cert-row span{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tx-soft);padding-top:3px}
+.cert-row b{font-weight:600;text-align:right}
+.cert-foot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:20px}
+.cert-no{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;color:var(--tx-soft)}
+.cert-best{font-size:.8rem;font-style:italic;color:var(--tx-soft);max-width:24ch}
+.seal{width:82px;height:82px;flex:none;animation:spin 40s linear infinite}
+
+/* stats */
+.stats{background:var(--ink);color:var(--tx-inv);padding:clamp(40px,5vw,58px) 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:left}
+.stat b{font-family:var(--disp);font-size:clamp(2.1rem,4vw,3.1rem);font-weight:600;color:var(--brass-soft);display:block;line-height:1}
+.stat span{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tx-inv-soft);display:block;margin-top:10px}
+
+/* ============ JURISDICTIONS ============ */
+.j-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.j-card{background:#FCF8EE;border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.j-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--acc,var(--brass))}
+.j-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.j-top{display:flex;justify-content:space-between;align-items:flex-start}
+.j-flag{font-size:2.3rem;line-height:1;transition:transform .35s}
+.j-card:hover .j-flag{transform:scale(1.15) rotate(-4deg)}
+.j-tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:6px 10px;border-radius:99px;border:1px solid var(--acc,var(--brass));color:var(--acc,var(--brass))}
+.j-name{font-family:var(--disp);font-size:1.5rem;font-weight:600}
+.j-chips{display:flex;flex-wrap:wrap;gap:6px}
+.j-chips span{font-size:.72rem;font-weight:600;background:var(--paper-2);padding:5px 10px;border-radius:4px}
+.j-meta{display:grid;gap:7px;font-size:.86rem;color:var(--tx-soft);border-top:1px dashed var(--line);padding-top:13px}
+.j-meta b{color:var(--tx);font-weight:600}
+.j-meta .mono{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em}
+.j-cta{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.9rem;color:var(--wa-dark);padding-top:6px}
+.j-cta svg{width:16px;height:16px;transition:transform .25s}
+.j-cta:hover svg{transform:translateX(4px)}
+.j-card.feat{border:1.5px solid var(--brass);background:linear-gradient(165deg,#FCF8EE,#F3EAD1)}
+/* gulf dark cards */
+.gulf-head{display:flex;align-items:baseline;gap:16px;margin:clamp(36px,5vw,52px) 0 20px;flex-wrap:wrap}
+.gulf-head h3{font-family:var(--disp);font-size:1.6rem;font-weight:600}
+.gulf-head p{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.j-card.dark{background:var(--ink);color:var(--tx-inv);border-color:var(--line-inv)}
+.j-card.dark::before{background:var(--brass)}
+.j-card.dark .j-chips span{background:var(--ink-3);color:var(--brass-soft)}
+.j-card.dark .j-meta{color:var(--tx-inv-soft);border-color:var(--line-inv)}
+.j-card.dark .j-meta b{color:var(--tx-inv)}
+.j-card.dark .j-cta{color:var(--brass-soft)}
+
+/* ============ PROCESS ============ */
+.process{background:var(--paper-2)}
+.p-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(40px,6vw,90px);align-items:start}
+.p-left{position:sticky;top:110px}
+.p-left .h2{margin-bottom:18px}
+.p-left .btn{margin-top:28px}
+.step{display:grid;grid-template-columns:92px 1fr;gap:22px;padding:30px 0;border-top:1px solid var(--line);align-items:start}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step-num{font-family:var(--disp);font-size:3rem;font-weight:600;line-height:.9;color:transparent;-webkit-text-stroke:1.2px var(--brass)}
+@supports not (-webkit-text-stroke:1px black){.step-num{color:var(--brass)}}
+.step h4{font-size:1.12rem;font-weight:700;margin-bottom:6px}
+.step p{color:var(--tx-soft);font-size:.94rem;max-width:48ch}
+.step .tag{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);border:1px solid var(--brass-dim);padding:5px 10px;border-radius:99px}
+
+/* ============ BENTO / SUPPORT ============ */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.tile{background:#FCF8EE;border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.tile:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--brass-dim)}
+.tile h4{font-family:var(--disp);font-size:1.25rem;font-weight:600;margin-bottom:8px}
+.tile p{font-size:.9rem;color:var(--tx-soft)}
+.tile svg{width:26px;height:26px;color:var(--brass);margin-bottom:14px}
+.tile-big{grid-column:span 4;grid-row:span 2;background:var(--ink);color:var(--tx-inv);border-color:var(--line-inv);display:flex;flex-direction:column}
+.tile-big:hover{border-color:var(--brass)}
+.tile-big p{color:var(--tx-inv-soft)}
+.tile-big h4{font-size:clamp(1.5rem,2.6vw,2.1rem)}
+.tile-big ul{margin-top:auto;padding-top:24px;display:grid;gap:10px;list-style:none}
+.tile-big li{display:flex;gap:10px;font-size:.9rem;align-items:baseline}
+.tile-big li::before{content:"✓";color:var(--brass-soft);font-weight:700}
+.tile-sm{grid-column:span 2}
+.tile-cta{grid-column:span 3;background:var(--paper-2);display:flex;flex-direction:column;gap:14px}
+.tile-cta2{grid-column:span 3}
+
+/* ============ QUIZ ============ */
+.quiz-sec{background:var(--ink);color:var(--tx-inv);overflow:hidden}
+.quiz-sec .arc{position:absolute;left:-20%;bottom:-40%;width:70vw;opacity:.35;pointer-events:none}
+.quiz-box{max-width:720px;margin-inline:auto;position:relative}
+.qz-progress{display:flex;gap:8px;margin-bottom:34px}
+.qz-progress i{flex:1;height:3px;background:var(--line-inv);border-radius:2px;overflow:hidden;position:relative}
+.qz-progress i.done::after,.qz-progress i.now::after{content:"";position:absolute;inset:0;background:var(--brass)}
+.qz-step{display:none}
+.qz-step.on{display:block;animation:certIn .4s ease}
+.qz-q{font-family:var(--disp);font-size:clamp(1.5rem,3vw,2.1rem);font-weight:500;margin-bottom:26px;line-height:1.15}
+.qz-opts{display:grid;gap:12px}
+.qz-opt{text-align:left;border:1px solid var(--line-inv);border-radius:var(--r);padding:17px 20px;font-size:1rem;color:var(--tx-inv);display:flex;justify-content:space-between;align-items:center;gap:12px;transition:border-color .25s,background .25s,transform .25s}
+.qz-opt::after{content:"→";color:var(--brass);opacity:0;transform:translateX(-8px);transition:.25s}
+.qz-opt:hover{border-color:var(--brass);background:var(--ink-2);transform:translateX(4px)}
+.qz-opt:hover::after{opacity:1;transform:none}
+.qz-result{display:none;text-align:center;padding:10px 0}
+.qz-result.on{display:block;animation:certIn .5s ease}
+.qz-result .flag{font-size:3.4rem}
+.qz-result h3{font-family:var(--disp);font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:600;margin:10px 0 8px}
+.qz-result h3 em{color:var(--brass-soft);font-style:italic}
+.qz-result p{color:var(--tx-inv-soft);max-width:46ch;margin:0 auto 12px}
+.qz-second{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-soft);margin-bottom:26px}
+.qz-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* ============ TESTIMONIALS ============ */
+.cards{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;padding-top:10px}
+.postcard{width:min(345px,100%);background:#FCF8EE;border:1px solid var(--line);border-radius:4px;padding:26px;box-shadow:0 12px 30px -14px rgba(12,31,28,.22);transform:rotate(var(--r,0deg));transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s;position:relative}
+.postcard:hover{transform:rotate(0) translateY(-8px);box-shadow:var(--shadow);z-index:2}
+.postcard:nth-child(1){--r:-2.6deg}.postcard:nth-child(2){--r:1.8deg}.postcard:nth-child(3){--r:-1.4deg}
+.postcard:nth-child(4){--r:2.4deg}.postcard:nth-child(5){--r:-2deg}.postcard:nth-child(6){--r:1.4deg}
+.pc-stamp{position:absolute;top:14px;right:14px;font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;border:1px dashed var(--brass);color:var(--brass);padding:5px 8px;transform:rotate(6deg)}
+.pc-stars{color:var(--brass);letter-spacing:3px;font-size:.85rem;margin-bottom:12px}
+.pc-quote{font-family:var(--disp);font-size:1.05rem;font-style:italic;line-height:1.45;margin-bottom:18px}
+.pc-who{display:flex;align-items:center;gap:12px;border-top:1px dashed var(--line);padding-top:14px}
+.pc-ava{width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--brass-soft);display:grid;place-items:center;font-family:var(--disp);font-weight:600;flex:none}
+.pc-who b{display:block;font-size:.9rem}
+.pc-who span{font-size:.76rem;color:var(--tx-soft)}
+
+/* ============ FAQ ============ */
+.faq-wrap{max-width:820px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;text-align:left;padding:24px 0;font-size:1.08rem;font-weight:600;font-family:var(--body)}
+.faq-q i{font-style:normal;font-family:var(--disp);font-size:1.5rem;color:var(--brass);transition:transform .35s;flex:none;line-height:1}
+.faq-item.open .faq-q i{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.2,.7,.2,1)}
+.faq-a p{padding:0 0 24px;color:var(--tx-soft);max-width:64ch;font-size:.96rem}
+.faq-a b{color:var(--wa-dark)}
+
+/* ============ FINAL CTA ============ */
+.final{background:var(--ink);color:var(--tx-inv);text-align:center;overflow:hidden}
+.final .h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+.final p.sub{color:var(--tx-inv-soft);max-width:52ch;margin:22px auto 36px;font-size:1.05rem}
+.final .btn-wa{font-size:1.05rem;padding:19px 34px}
+.final-num{margin-top:26px;font-family:var(--mono);letter-spacing:.1em;font-size:.9rem;color:var(--brass-soft)}
+.final-hours{margin-top:8px;font-size:.8rem;color:var(--tx-inv-soft)}
+.final .fine{margin-top:34px;font-size:.78rem;color:var(--tx-inv-soft);opacity:.75;max-width:60ch;margin-inline:auto}
+
+/* ============ FOOTER ============ */
+footer{background:#081512;color:var(--tx-inv-soft);padding:56px 0 30px;font-size:.88rem}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line-inv)}
+.f-grid h5{font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:16px}
+.f-grid a{display:block;padding:4px 0;transition:color .2s}
+.f-grid a:hover{color:var(--brass-soft)}
+.f-brand p{margin-top:14px;max-width:34ch}
+.f-bottom{padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.72rem;opacity:.75}
+.f-bottom .disc{width:100%;max-width:80ch}
+
+/* floating wa */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:90;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.7);opacity:0;transform:translateY(20px) scale(.8);transition:.4s cubic-bezier(.2,.7,.2,1)}
+.wa-float.show{opacity:1;transform:none}
+.wa-float svg{width:28px;height:28px;fill:#06180C}
+.wa-float::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.8);opacity:.8}100%{transform:scale(1.35);opacity:0}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr}
+  .cert-wrap{max-width:520px}
+  .j-grid{grid-template-columns:1fr 1fr}
+  .p-grid{grid-template-columns:1fr}
+  .p-left{position:static}
+  .tile-big{grid-column:span 6;grid-row:auto}
+  .tile-sm{grid-column:span 3}
+}
+@media(max-width:860px){
+  .nav-links,.nav-cta .btn{display:none}
+  .burger{display:flex}
+  .trust-strip{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:620px){
+  .j-grid{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr}
+  .tile-big,.tile-sm,.tile-cta,.tile-cta2{grid-column:auto}
+  .step{grid-template-columns:60px 1fr;gap:14px}
+  .step-num{font-size:2.2rem}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .cert-foot{flex-wrap:wrap;gap:14px}
+}
+/* ============ REDUCED MOTION ============ */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  .ticker-track{animation:none;flex-wrap:wrap}
+  .rv{opacity:1;transform:none}
+  .lm>span{transform:none;animation:none}
+  .hero-globe,.seal{animation:none}
+}
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>🇬🇧 UK · Formation in 24–48h<i>✦</i>🇺🇸 USA · Delaware & Wyoming LLC<i>✦</i>🇨🇦 Canada · Federal incorporation<i>✦</i>🇮🇳 India · Pvt Ltd via SPICe+<i>✦</i>🇶🇦 Qatar · 0% personal tax<i>✦</i>🇸🇦 Saudi · MISA licence · Vision 2030<i>✦</i>2,400+ companies formed<i>✦</i>Lifetime compliance care<i>✦</i></span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Elepta Formations home">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" stroke="#C29A3B" stroke-width="1.6"/>
+        <ellipse cx="20" cy="20" rx="8" ry="17" stroke="#C29A3B" stroke-width="1.2"/>
+        <line x1="3" y1="20" x2="37" y2="20" stroke="#C29A3B" stroke-width="1.2"/>
+        <circle cx="20" cy="20" r="2.6" fill="#0C1F1C"/>
+      </svg>
+      <span><span class="brand-name">Elepta</span><span class="brand-sub" style="display:block">Formations</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#jurisdictions">Jurisdictions</a>
+      <a href="#process">Process</a>
+      <a href="#support">Support</a>
+      <a href="#fit">Fit Finder</a>
+      <a href="#stories">Clients</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-wa" data-wa="Hello Elepta! I'd like to discuss company formation. Please share pricing and next steps." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.3Z"/></svg>
+        WhatsApp Us
+      </a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mnav" id="mnav" aria-label="Mobile">
+  <a href="#jurisdictions">Jurisdictions</a>
+  <a href="#process">Process</a>
+  <a href="#support">Support</a>
+  <a href="#fit">Fit Finder</a>
+  <a href="#stories">Clients</a>
+  <a href="#faq">FAQ</a>
+  <a class="btn btn-wa" data-wa="Hello Elepta! I'd like to discuss company formation." target="_blank" rel="noopener">WhatsApp Us</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <svg class="hero-globe" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+    <circle cx="300" cy="300" r="290" stroke="#C29A3B" stroke-width="1" opacity=".5"/>
+    <circle cx="300" cy="300" r="220" stroke="#C29A3B" stroke-width="1" opacity=".4"/>
+    <circle cx="300" cy="300" r="150" stroke="#C29A3B" stroke-width="1" opacity=".3"/>
+    <ellipse cx="300" cy="300" rx="290" ry="110" stroke="#C29A3B" stroke-width="1" opacity=".4"/>
+    <ellipse cx="300" cy="300" rx="110" ry="290" stroke="#C29A3B" stroke-width="1" opacity=".4"/>
+    <line x1="10" y1="300" x2="590" y2="300" stroke="#C29A3B" stroke-width="1" opacity=".4"/>
+  </svg>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow" id="scrambleEye">Company Formation · Six Jurisdictions</p>
+        <h1 class="hero-title">
+          <span class="lm"><span>Six countries.</span></span>
+          <span class="lm"><span>One <em>handshake.</em></span></span>
+        </h1>
+        <p class="hero-sub">Elepta incorporates your company in the <strong>UK, USA, Canada, India, Qatar and Saudi Arabia</strong> — fully remote — then stays beside you for banking guidance, filings and every deadline that follows.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa" data-wa="Hello Elepta! I'd like a personal quote for company formation. Here's my plan:" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.3Z"/></svg>
+            Get my free quote
+          </a>
+          <a class="btn btn-ghost" href="mailto:info@elepta.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Us
+          </a>
+        </div>
+        <p class="hero-note">★ <b>4.9/5</b> from 600+ founders &nbsp;·&nbsp; No-residency routes &nbsp;·&nbsp; Replies in under 1 hour</p>
+      </div>
+
+      <!-- Interactive certificate -->
+      <div class="cert-wrap">
+        <div class="cert-tabs" role="tablist" aria-label="Choose jurisdiction">
+          <button data-j="uk" aria-pressed="true" title="United Kingdom">🇬🇧</button>
+          <button data-j="us" aria-pressed="false" title="United States">🇺🇸</button>
+          <button data-j="ca" aria-pressed="false" title="Canada">🇨🇦</button>
+          <button data-j="in" aria-pressed="false" title="India">🇮🇳</button>
+          <button data-j="qa" aria-pressed="false" title="Qatar">🇶🇦</button>
+          <button data-j="sa" aria-pressed="false" title="Saudi Arabia">🇸🇦</button>
+        </div>
+        <div class="cert" id="cert">
+          <p class="cert-kicker">Certificate of Incorporation</p>
+          <div class="cert-flag" id="cFlag">🇬🇧</div>
+          <div class="cert-body">
+            <h3 class="cert-country" id="cName">United Kingdom</h3>
+            <div class="cert-rule"><i>✦</i></div>
+            <div class="cert-rows">
+              <div class="cert-row"><span>Registry</span><b id="cReg">Companies House</b></div>
+              <div class="cert-row"><span>Entity</span><b id="cEntity">Private Limited (LTD) · LLP</b></div>
+              <div class="cert-row"><span>Timeline</span><b id="cTime">24–48 hours</b></div>
+              <div class="cert-row"><span>Requirement</span><b id="cReq">1 director · 1 shareholder</b></div>
+            </div>
+            <div class="cert-foot">
+              <div>
+                <p class="cert-no" id="cNo">Company No. 15 • 4 8 2 • • 9</p>
+                <p class="cert-best" id="cBest">Ideal for e-commerce, agencies &amp; SaaS billing in GBP/USD.</p>
+              </div>
+              <svg class="seal" viewBox="0 0 96 96" aria-hidden="true">
+                <defs><path id="sealArc" d="M48 12a36 36 0 1 1 0 72 36 36 0 1 1 0-72"/></defs>
+                <circle cx="48" cy="48" r="45" fill="none" stroke="#B3432B" stroke-width="1.6" stroke-dasharray="3 4"/>
+                <circle cx="48" cy="48" r="30" fill="none" stroke="#B3432B" stroke-width="1.4"/>
+                <text fill="#B3432B" font-size="8.2" font-family="Spline Sans Mono,monospace" letter-spacing="2.2"><textPath href="#sealArc">Elepta · VERIFIED · EST · 2016 ·</textPath></text>
+                <path d="M48 36l3.4 7.2 7.9.9-5.9 5.3 1.7 7.8L48 53.3l-7.1 3.9 1.7-7.8-5.9-5.3 7.9-.9z" fill="#B3432B"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- trust strip -->
+    <div class="trust-strip rv">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Licensed local partners</div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c1-3.5 3.8-5 7-5s6 1.5 7 5"/></svg>One dedicated advisor</div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>Transparent chat quotes</div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Strict confidentiality</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat rv"><b><span class="num" data-to="2400">0</span>+</b><span>Companies formed</span></div>
+    <div class="stat rv"><b><span class="num" data-to="6">0</span></b><span>Jurisdictions covered</span></div>
+    <div class="stat rv"><b><span class="num" data-to="48">0</span>h</b><span>Typical UK turnaround</span></div>
+    <div class="stat rv"><b><span class="num" data-to="96">0</span>%</b><span>Clients who stay with us</span></div>
+  </div>
+</section>
+
+<!-- JURISDICTIONS -->
+<section class="sec-pad" id="jurisdictions">
+  <div class="container">
+    <div class="sec-head rv">
+      <p class="label">01 · Jurisdictions</p>
+      <h2 class="h2">Wherever you're headed, we've <em>filed there.</em></h2>
+      <p class="lead" style="margin-top:16px">Every country has its own rhythm — registries, residency rules, timelines. We handle the local maze; you keep the keys. No prices on this page — every quote is personal, delivered on WhatsApp within the hour.</p>
+    </div>
+
+    <div class="j-grid">
+      <article class="j-card feat rv" id="j-uk" style="--acc:#C29A3B">
+        <div class="j-top"><span class="j-flag">🇬🇧</span><span class="j-tag">Most popular</span></div>
+        <h3 class="j-name">United Kingdom</h3>
+        <div class="j-chips"><span>LTD</span><span>LLP</span></div>
+        <div class="j-meta">
+          <p class="mono">⏱ 24–48 HOURS · COMPANIES HOUSE</p>
+          <p><b>Requirements:</b> 1 director, 1 shareholder, UK registered office (we provide it).</p>
+          <p><b>Best for:</b> E-commerce, agencies, freelancers &amp; SaaS invoicing in GBP/USD with global banking credibility.</p>
+        </div>
+        <a class="j-cta" data-wa="Hello Elepta! Please share pricing and requirements for forming a UK LTD company." target="_blank" rel="noopener">Ask about the UK <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="j-card rv" id="j-us" style="--acc:#3B5BA5">
+        <div class="j-top"><span class="j-flag">🇺🇸</span><span class="j-tag">Investor-ready</span></div>
+        <h3 class="j-name">United States</h3>
+        <div class="j-chips"><span>LLC</span><span>C-Corp</span><span>Delaware</span><span>Wyoming</span></div>
+        <div class="j-meta">
+          <p class="mono">⏱ 1–5 BUSINESS DAYS · STATE REGISTRY</p>
+          <p><b>Requirements:</b> 1 member. No US residency or visit needed — ever.</p>
+          <p><b>Best for:</b> SaaS, Amazon FBA, startups raising VC, and global payment gateways like Stripe.</p>
+        </div>
+        <a class="j-cta" data-wa="Hello Elepta! Please share pricing and requirements for forming a US LLC / C-Corp." target="_blank" rel="noopener">Ask about the USA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="j-card rv" id="j-ca" style="--acc:#C4442A">
+        <div class="j-top"><span class="j-flag">🇨🇦</span><span class="j-tag">Founder-friendly</span></div>
+        <h3 class="j-name">Canada</h3>
+        <div class="j-chips"><span>Federal Corp</span><span>Provincial</span></div>
+        <div class="j-meta">
+          <p class="mono">⏱ 3–10 BUSINESS DAYS</p>
+          <p><b>Requirements:</b> 1 director — non-residents welcome on federal routes.</p>
+          <p><b>Best for:</b> North American market entry, strong banking system and founder relocation pathways.</p>
+        </div>
+        <a class="j-cta" data-wa="Hello Elepta! Please share pricing and requirements for forming a Canadian corporation." target="_blank" rel="noopener">Ask about Canada <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="j-card rv" id="j-in" style="--acc:#D07A2A">
+        <div class="j-top"><span class="j-flag">🇮🇳</span><span class="j-tag">Growth market</span></div>
+        <h3 class="j-name">India</h3>
+        <div class="j-chips"><span>Private Ltd</span><span>LLP</span></div>
+        <div class="j-meta">
+          <p class="mono">⏱ 7–14 DAYS · MCA SPICe+</p>
+          <p><b>Requirements:</b> 2 directors, 2 shareholders, 1 resident director (we can guide the structure).</p>
+          <p><b>Best for:</b> Serving a 1.4-billion market, building tech teams, and global outsourcing.</p>
+        </div>
+        <a class="j-cta" data-wa="Hello Elepta! Please share pricing and requirements for forming an Indian Private Limited company." target="_blank" rel="noopener">Ask about India <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="j-card dark rv" id="j-qa" style="--acc:#8A2E4A">
+        <div class="j-top"><span class="j-flag">🇶🇦</span><span class="j-tag">0% personal tax</span></div>
+        <h3 class="j-name">Qatar</h3>
+        <div class="j-chips"><span>LLC (WLL)</span><span>QFC</span><span>Free Zone</span></div>
+        <div class="j-meta">
+          <p class="mono">⏱ 2–6 WEEKS · MoCI / QFC / QFZ</p>
+          <p><b>Requirements:</b> 100% foreign ownership available in most sectors &amp; free zones.</p>
+          <p><b>Best for:</b> GCC trading, contracting and consulting with zero personal income tax.</p>
+        </div>
+        <a class="j-cta" data-wa="Hello Elepta! Please share pricing and requirements for forming a company in Qatar." target="_blank" rel="noopener">Ask about Qatar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="j-card dark rv" id="j-sa" style="--acc:#1F6E4A">
+        <div class="j-top"><span class="j-flag">🇸🇦</span><span class="j-tag">Vision 2030</span></div>
+        <h3 class="j-name">Saudi Arabia</h3>
+        <div class="j-chips"><span>LLC — MISA</span><span>100% foreign-owned</span></div>
+        <div class="j-meta">
+          <p class="mono">⏱ 3–8 WEEKS · MINISTRY OF INVESTMENT</p>
+          <p><b>Requirements:</b> MISA investment licence — full foreign ownership, no local sponsor needed.</p>
+          <p><b>Best for:</b> Mega-projects, NEOM supply chains, and the largest economy in the Arab world.</p>
+        </div>
+        <a class="j-cta" data-wa="Hello Elepta! Please share pricing and requirements for forming a company in Saudi Arabia (MISA licence)." target="_blank" rel="noopener">Ask about Saudi Arabia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+
+    <div class="gulf-head rv">
+      <h3>The Gulf Desk 🌙</h3>
+      <p>Qatar &amp; Saudi handled by advisors who know the ministries in person</p>
+    </div>
+    <a class="btn btn-ink rv" style="display:inline-flex" data-wa="Hello Elepta! I'm interested in the Gulf region (Qatar / Saudi Arabia). Please advise on the best setup for my business." target="_blank" rel="noopener">Talk to the Gulf Desk →</a>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process sec-pad" id="process">
+  <div class="container p-grid">
+    <div class="p-left rv">
+      <p class="label">02 · Process</p>
+      <h2 class="h2">From first message to first filing — <em>in five moves.</em></h2>
+      <p class="lead">No portals to learn, no forms to decode. The whole journey happens over one WhatsApp thread with your dedicated advisor.</p>
+      <a class="btn btn-wa" data-wa="Hello Elepta! I'd like to start the formation process. Here's my situation:" target="_blank" rel="noopener">Start move one — it's free</a>
+    </div>
+    <div>
+      <div class="step rv"><span class="step-num">01</span><div><h4>Consultation on WhatsApp</h4><p>Tell us your plans. We confirm the right jurisdiction and structure for your goals — and send a fully itemised, transparent quote.</p><span class="tag">Same day · Free</span></div></div>
+      <div class="step rv"><span class="step-num">02</span><div><h4>Documents, gathered once</h4><p>Usually just a passport and proof of address. We collect securely, double-check everything, and handle translations &amp; attestation where needed.</p><span class="tag">~24 hours</span></div></div>
+      <div class="step rv"><span class="step-num">03</span><div><h4>Name reservation &amp; filing</h4><p>We reserve your company name and submit to the official registry — Companies House, State Registry, MCA, MISA or the relevant ministry.</p><span class="tag">We file · you relax</span></div></div>
+      <div class="step rv"><span class="step-num">04</span><div><h4>Incorporation &amp; handover</h4><p>Certificates, constitutional documents and registration numbers delivered digitally — plus guided introductions for business banking and payment gateways.</p><span class="tag">Digital delivery</span></div></div>
+      <div class="step rv"><span class="step-num">05</span><div><h4>Support that doesn't end</h4><p>Compliance calendar, annual filings, company changes, accounting coordination. Your advisor stays on the thread — for years, not weeks.</p><span class="tag">Lifetime care</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT BENTO -->
+<section class="sec-pad" id="support">
+  <div class="container">
+    <div class="sec-head rv">
+      <p class="label">03 · Continuous support</p>
+      <h2 class="h2">Formation day is the <em>starting line,</em> not the finish.</h2>
+    </div>
+    <div class="bento">
+      <div class="tile tile-big rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--brass-soft)"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <h4>After formation, we stay on the clock.</h4>
+        <p>Most firms disappear once the certificate is issued. We built Elepta around the opposite idea — a corporate team that behaves like your back office, wherever you are in the world.</p>
+        <ul>
+          <li>Deadline tracking across all six jurisdictions</li>
+          <li>One advisor who knows your company inside-out</li>
+          <li>Responses on WhatsApp, usually within the hour</li>
+          <li>Escalation to licensed lawyers &amp; accountants when needed</li>
+        </ul>
+      </div>
+      <div class="tile tile-sm rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><h4>Compliance calendar</h4><p>Every filing date tracked and reminded well in advance — never miss a penalty-triggering deadline.</p></div>
+      <div class="tile tile-sm rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4M10 12h5M10 16h5"/></svg><h4>Annual filings</h4><p>Confirmation statements, annual returns and statutory documents prepared and submitted for you.</p></div>
+      <div class="tile tile-sm rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-7h6v7"/></svg><h4>Registered office</h4><p>Prestige addresses and mail handling where required — your privacy protected on public registers.</p></div>
+      <div class="tile tile-sm rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 11h18M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg><h4>Banking &amp; payments</h4><p>Introductions to digital banks and payment gateways suited to your jurisdiction and sector.</p></div>
+      <div class="tile tile-sm rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg><h4>Company changes</h4><p>New directors, share transfers, address or name changes — drafted and filed without friction.</p></div>
+      <div class="tile tile-sm rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 20V9l7-5 7 5v11"/><path d="M9 20v-6h6v6"/></svg><h4>Accounting liaison</h4><p>Coordination with licensed accountants for bookkeeping, tax registration and year-end filings.</p></div>
+      <div class="tile tile-cta rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4z"/></svg>
+        <h4>Something unusual in mind?</h4>
+        <p>Apostilles, restructuring, dormant accounts, closing down — if it involves a company in our six countries, ask.</p>
+        <a class="btn btn-wa" style="align-self:flex-start" data-wa="Hello Elepta! I have a question about ongoing support:" target="_blank" rel="noopener">Ask on WhatsApp</a>
+      </div>
+      <div class="tile tile-cta2 rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h4>Our quiet promise</h4>
+        <p>No surprise invoices. No jargon. If a deadline approaches, you'll hear it from us first — not from a government letter. That's the standard we hold ourselves to, on every continent we cover.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="quiz-sec sec-pad" id="fit">
+  <svg class="arc" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+    <circle cx="300" cy="300" r="280" stroke="#C29A3B" stroke-width="1"/>
+    <circle cx="300" cy="300" r="200" stroke="#C29A3B" stroke-width="1"/>
+    <circle cx="300" cy="300" r="120" stroke="#C29A3B" stroke-width="1"/>
+  </svg>
+  <div class="container">
+    <div class="sec-head rv" style="text-align:center;margin-inline:auto">
+      <p class="label" style="justify-content:center">04 · Fit finder</p>
+      <h2 class="h2" style="color:var(--tx-inv)">Not sure where to incorporate? <em>60 seconds will tell you.</em></h2>
+    </div>
+    <div class="quiz-box rv">
+      <div class="qz-progress" aria-hidden="true"><i id="qzp1"></i><i id="qzp2"></i><i id="qzp3"></i></div>
+
+      <div class="qz-step on" data-step="1">
+        <h3 class="qz-q">Where will your business primarily sell?</h3>
+        <div class="qz-opts">
+          <button class="qz-opt" data-s="uk:2 us:2 ca:1">Globally / online</button>
+          <button class="qz-opt" data-s="us:3 ca:2">The USA &amp; North America</button>
+          <button class="qz-opt" data-s="qa:3 sa:2">The Middle East / GCC</button>
+          <button class="qz-opt" data-s="in:3">India's domestic market</button>
+        </div>
+      </div>
+
+      <div class="qz-step" data-step="2">
+        <h3 class="qz-q">Where are you personally based today?</h3>
+        <div class="qz-opts">
+          <button class="qz-opt" data-s="uk:2 us:1">UK / Europe</button>
+          <button class="qz-opt" data-s="us:2 ca:2">North America</button>
+          <button class="qz-opt" data-s="qa:2 sa:2">The Middle East</button>
+          <button class="qz-opt" data-s="in:2 uk:1">Asia / anywhere else</button>
+        </div>
+      </div>
+
+      <div class="qz-step" data-step="3">
+        <h3 class="qz-q">What matters most to you right now?</h3>
+        <div class="qz-opts">
+          <button class="qz-opt" data-s="uk:2 us:2">Speed of setup</button>
+          <button class="qz-opt" data-s="qa:2 sa:1 us:1">Low tax &amp; light compliance</button>
+          <button class="qz-opt" data-s="uk:2 us:2 ca:1">Strong banking &amp; payments</button>
+          <button class="qz-opt" data-s="sa:2 qa:2 in:2 ca:1">Presence in a local market</button>
+        </div>
+      </div>
+
+      <div class="qz-result" id="qzResult">
+        <div class="flag" id="qrFlag">🇬🇧</div>
+        <h3>Our pick for you: <em id="qrName">United Kingdom</em></h3>
+        <p id="qrWhy">Fast, credible and globally bankable — perfect for selling anywhere from day one.</p>
+        <p class="qz-second" id="qrSecond">Runner-up: 🇺🇸 United States</p>
+        <div class="qz-ctas">
+          <a class="btn btn-wa" id="qrCta" target="_blank" rel="noopener">Get my quote on WhatsApp</a>
+          <button class="btn btn-ghost" id="qzRestart" style="border-color:var(--line-inv);color:var(--tx-inv)">↺ Retake</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec-pad" id="stories">
+  <div class="container">
+    <div class="sec-head rv" style="text-align:center;margin-inline:auto">
+      <p class="label" style="justify-content:center">05 · Client stories</p>
+      <h2 class="h2">Proof, in <em>their words.</em></h2>
+    </div>
+    <div class="cards">
+      <article class="postcard rv"><span class="pc-stamp">🇬🇧 UK LTD</span><div class="pc-stars">★★★★★</div><p class="pc-quote">"Sent my passport scan on Tuesday morning; my LTD was live with a bank account introduction by Thursday. I've never had paperwork feel this effortless."</p><div class="pc-who"><span class="pc-ava">JO</span><div><b>James O.</b><span>E-commerce founder · London</span></div></div></article>
+      <article class="postcard rv"><span class="pc-stamp">🇺🇸 DELAWARE</span><div class="pc-stars">★★★★★</div><p class="pc-quote">"As a non-resident I assumed a US LLC would take months. Elepta had my Delaware LLC and EIN process started within days — and they still answer my tax-season questions."</p><div class="pc-who"><span class="pc-ava">DM</span><div><b>Daniel M.</b><span>SaaS founder · Remote</span></div></div></article>
+      <article class="postcard rv"><span class="pc-stamp">🇶🇦 QATAR</span><div class="pc-stars">★★★★★</div><p class="pc-quote">"Qatar's paperwork intimidated me until I found them. They walked me through the ministry process step by step. My trading LLC is now running smoothly in Doha."</p><div class="pc-who"><span class="pc-ava">FR</span><div><b>Fatima R.</b><span>Trading LLC owner · Doha</span></div></div></article>
+      <article class="postcard rv"><span class="pc-stamp">🇮🇳 PVT LTD</span><div class="pc-stars">★★★★★</div><p class="pc-quote">"From DSC to PAN to incorporation — everything was coordinated over one WhatsApp thread. My Pvt Ltd was ready in 11 days, and my clients noticed the difference immediately."</p><div class="pc-who"><span class="pc-ava">PS</span><div><b>Priya S.</b><span>Tech consultant · Bengaluru</span></div></div></article>
+      <article class="postcard rv"><span class="pc-stamp">🇸🇦 MISA</span><div class="pc-stars">★★★★★</div><p class="pc-quote">"The MISA licence felt like a maze until Elepta mapped it out. We won our first NEOM-related contract three months after incorporation. Worth every message."</p><div class="pc-who"><span class="pc-ava">OK</span><div><b>Omar K.</b><span>Contracting director · Riyadh</span></div></div></article>
+      <article class="postcard rv"><span class="pc-stamp">🇨🇦 FEDERAL</span><div class="pc-stars">★★★★★</div><p class="pc-quote">"They didn't just register my company — they flagged a structure that saves me headaches every single year. That's the difference between a filing service and a partner."</p><div class="pc-who"><span class="pc-ava">AL</span><div><b>Amélie L.</b><span>Agency owner · Toronto</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec-pad" id="faq" style="background:var(--paper-2)">
+  <div class="container">
+    <div class="sec-head rv">
+      <p class="label">06 · Questions</p>
+      <h2 class="h2">Asked often, answered <em>honestly.</em></h2>
+    </div>
+    <div class="faq-wrap rv">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How much does company formation cost?<i>+</i></button><div class="faq-a"><p>Every business is different — structure, sector, residency and add-ons all shape the final figure, so we don't publish flat prices. Message us on <b>WhatsApp</b> with a sentence about your plans and you'll receive a fully itemised, transparent quote the same day. No hidden fees, ever — what we quote is what you pay.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do I need to travel to the country of formation?<i>+</i></button><div class="faq-a"><p>No. Every jurisdiction we cover supports fully remote incorporation for foreign owners — the UK, USA and Canada are routinely formed without any visit. For Qatar and Saudi Arabia we handle ministry procedures through local partners; travel is only ever needed later for specific banking steps, and we'll tell you upfront if it applies to you.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How long does formation actually take?<i>+</i></button><div class="faq-a"><p>UK: 24–48 hours. USA: 1–5 business days (EIN processing adds time). Canada: 3–10 days. India: 7–14 days. Qatar: 2–6 weeks. Saudi Arabia: 3–8 weeks including the MISA licence. We give you a realistic date on day one — and we've built our reputation on hitting it.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can I own 100% as a foreigner?<i>+</i></button><div class="faq-a"><p>Yes in the UK, USA and Canada. In Saudi Arabia, 100% foreign ownership is available through the MISA licence. In Qatar, most sectors and both free zones (QFC/QFZ) now allow full foreign ownership. India requires one resident director — we'll show you compliant ways to structure that.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you help with bank accounts?<i>+</i></button><div class="faq-a"><p>We prepare your company to be bank-ready and make warm introductions to digital banks and payment providers suited to your jurisdiction and sector. Opening decisions always rest with the bank — but our clients' approval rates are dramatically higher because applications arrive complete and correctly structured.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What documents will I need?<i>+</i></button><div class="faq-a"><p>For most formations: a passport and a proof of address. India additionally requires photographs and director identifiers; the Gulf may require attested documents. We send you a precise checklist after your free consultation and review everything before it's submitted — so nothing gets rejected.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What happens after my company is formed?<i>+</i></button><div class="faq-a"><p>That's where we shine. Your advisor stays on the thread: compliance calendar, annual filings, registered office, company changes, accounting coordination and anything else your company needs as it grows. Most of our clients have been with us for years.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is my information safe with you?<i>+</i></button><div class="faq-a"><p>Your documents are handled under strict confidentiality, stored securely, shared only where legally required for your filing, and never sold or used for marketing by third parties. On request, we're happy to sign an NDA before you share anything.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final sec-pad">
+  <div class="container">
+    <p class="label rv" style="justify-content:center;color:var(--brass-soft)">07 · Begin</p>
+    <h2 class="h2 rv" style="margin-top:18px">Ready when <em>you</em> are.</h2>
+    <p class="sub rv">Send one message with your plans. Within the hour you'll have a clear recommendation, an honest timeline and a transparent, itemised quote — on WhatsApp, no forms, no pressure.</p>
+    <a class="btn btn-wa rv" data-wa="Hello Elepta! I'm ready to discuss forming my company. Here's my plan:" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.3Z"/></svg>
+      Chat with us on WhatsApp
+    </a>
+    <p class="final-hours rv" style="margin-top: 16px;">or email us directly at <a href="mailto:info@elepta.com" style="color:var(--brass-soft); text-decoration: underline;">info@elepta.com</a></p>
+    <p class="final-num rv">+44 7818 974 289 · WhatsApp</p>
+    <p class="final-hours rv">Usually replies in under 1 hour · Monday–Saturday</p>
+    <p class="fine rv">Every quote is prepared personally for your situation. We'll never publish generic prices, because you're not a generic founder.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="brand" href="#top">
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="17" stroke="#C29A3B" stroke-width="1.6"/><ellipse cx="20" cy="20" rx="8" ry="17" stroke="#C29A3B" stroke-width="1.2"/><line x1="3" y1="20" x2="37" y2="20" stroke="#C29A3B" stroke-width="1.2"/></svg>
+          <span><span class="brand-name" style="color:var(--tx-inv)">Elepta</span><span class="brand-sub" style="display:block">Formations</span></span>
+        </a>
+        <p>Company formation and continuous corporate support across six jurisdictions — built around one promise: we stay.</p>
+      </div>
+      <div>
+        <h5>Jurisdictions</h5>
+        <a href="#j-uk">🇬🇧 United Kingdom</a>
+        <a href="#j-us">🇺🇸 United States</a>
+        <a href="#j-ca">🇨🇦 Canada</a>
+        <a href="#j-in">🇮🇳 India</a>
+        <a href="#j-qa">🇶🇦 Qatar</a>
+        <a href="#j-sa">🇸🇦 Saudi Arabia</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="#process">Our process</a>
+        <a href="#support">Continuous support</a>
+        <a href="#fit">Fit finder</a>
+        <a href="#stories">Client stories</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a data-wa="Hello Elepta! I have a question." target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px">
+          <svg style="width:16px;height:16px;flex:none" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.3Z"/></svg>
+          WhatsApp: +44 7818 974 289
+        </a>
+        <a href="mailto:info@elepta.com" style="display:flex;align-items:center;gap:8px">
+          <svg style="width:16px;height:16px;flex:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@elepta.com
+        </a>
+        <a href="https://www.instagram.com/elepta_com/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px">
+          <svg style="width:16px;height:16px;flex:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          @elepta_com
+        </a>
+        <p style="margin-top:14px;font-size:.8rem">Mon–Sat · replies typically under 1 hour.</p>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="year"></span> Elepta Formations (elepta.com). All rights reserved.</span>
+      <span>Made with care for founders on six continents.</span>
+      <p class="disc">Elepta Formations is a corporate services provider and is not a law firm or tax advisor. Regulated legal and tax work is performed with licensed local partners. Timelines shown are typical estimates and depend on official registry processing.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" id="waFloat" data-wa="Hello Elepta! I'd like to ask about company formation." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4.1.2.1.7-.1 1.3Z"/></svg>
+</a>
+
+<script>
+(function(){
+  "use strict";
+  var RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var WA_BASE = "https://wa.me/447818974289";
+
+  /* ---- WhatsApp link builder ---- */
+  function waLink(msg){ return WA_BASE + "?text=" + encodeURIComponent(msg); }
+  document.querySelectorAll("[data-wa]").forEach(function(el){
+    el.href = waLink(el.getAttribute("data-wa"));
+    el.setAttribute("target","_blank"); el.setAttribute("rel","noopener");
+  });
+
+  /* ---- Header ---- */
+  var header = document.getElementById("header");
+  function onScroll(){
+    header.classList.toggle("scrolled", window.scrollY > 12);
+    document.getElementById("waFloat").classList.toggle("show", window.scrollY > 420);
+  }
+  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+  /* ---- Mobile nav ---- */
+  var burger = document.getElementById("burger"), mnav = document.getElementById("mnav");
+  burger.addEventListener("click", function(){
+    var open = mnav.classList.toggle("open");
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open);
+    document.body.classList.toggle("locked", open);
+    mnav.querySelectorAll("a").forEach(function(a,i){ a.style.transitionDelay = open ? (0.06*i+0.1)+"s" : "0s"; });
+  });
+  mnav.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){
+    mnav.classList.remove("open"); burger.classList.remove("open");
+    burger.setAttribute("aria-expanded","false"); document.body.classList.remove("locked");
+  });});
+
+  /* ---- Ticker: duplicate for seamless loop ---- */
+  var track = document.getElementById("tickerTrack");
+  var clone = track.children[0].cloneNode(true); clone.setAttribute("aria-hidden","true");
+  track.appendChild(clone);
+
+  /* ---- Reveal on scroll ---- */
+  var rvs = document.querySelectorAll(".rv");
+  if(RM || !("IntersectionObserver" in window)){ rvs.forEach(function(e){e.classList.add("in");}); }
+  else{
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }});
+    },{threshold:.14});
+    rvs.forEach(function(e,i){ e.style.transitionDelay = (i%4)*0.07+"s"; io.observe(e); });
+  }
+
+  /* ---- Count up ---- */
+  function countUp(el){
+    var to = parseInt(el.dataset.to,10), t0 = null, dur = 1400;
+    function frame(t){ if(!t0) t0=t; var p=Math.min((t-t0)/dur,1); p=1-Math.pow(1-p,3);
+      el.textContent = Math.round(to*p).toLocaleString("en-GB");
+      if(p<1) requestAnimationFrame(frame); }
+    requestAnimationFrame(frame);
+  }
+  var nums = document.querySelectorAll(".num");
+  if(RM || !("IntersectionObserver" in window)){ nums.forEach(function(n){ n.textContent = parseInt(n.dataset.to,10).toLocaleString("en-GB"); }); }
+  else{
+    var nio = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ countUp(en.target); nio.unobserve(en.target); }});
+    },{threshold:.5});
+    nums.forEach(function(n){ nio.observe(n); });
+  }
+
+  /* ---- Scramble decode ---- */
+  var CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789•";
+  function scramble(el, text){
+    if(RM){ el.textContent = text; return; }
+    var i = 0, steps = Math.max(text.length, 14), t = 0;
+    clearInterval(el._si);
+    el._si = setInterval(function(){
+      t++;
+      var out = "";
+      for(var c=0;c<text.length;c++){
+        out += (c < (t/steps)*text.length*1.4) ? text[c] : (text[c]===" "?" ":CHARS[Math.floor(Math.random()*CHARS.length)]);
+      }
+      el.textContent = out;
+      if(t>=steps){ clearInterval(el._si); el.textContent = text; }
+    }, 34);
+  }
+  scramble(document.getElementById("scrambleEye"), "Company Formation · Six Jurisdictions");
+
+  /* ---- Certificate switcher ---- */
+  var JUR = {
+    uk:{flag:"🇬🇧",name:"United Kingdom",reg:"Companies House",entity:"Private Limited (LTD) · LLP",time:"24–48 hours",req:"1 director · 1 shareholder",no:"Company No. 15 • 4 8 2 • • 9",best:"Ideal for e-commerce, agencies & SaaS billing in GBP/USD."},
+    us:{flag:"🇺🇸",name:"United States",reg:"State Registry — DE · WY · FL",entity:"LLC · C-Corp (Delaware)",time:"1–5 business days",req:"1 member · no residency needed",no:"File No. 7 8 • • 4 2 1",best:"Ideal for SaaS, Amazon FBA & raising US investment."},
+    ca:{flag:"🇨🇦",name:"Canada",reg:"Corporations Canada",entity:"Federal / Provincial Corp",time:"3–10 business days",req:"1 director · non-residents OK",no:"Corp No. 2 • 4 8 1 • • 7",best:"Ideal for North American expansion & founder pathways."},
+    in:{flag:"🇮🇳",name:"India",reg:"MCA — SPICe+ Filing",entity:"Private Limited · LLP",time:"7–14 days",req:"2 directors · 1 resident",no:"CIN U7•••2026PTC••••",best:"Ideal for tech teams & a 1.4-billion consumer market."},
+    qa:{flag:"🇶🇦",name:"Qatar",reg:"MoCI · QFC · QFZ",entity:"LLC (WLL) · Free Zone",time:"2–6 weeks",req:"100% foreign ownership",no:"CR No. 1 • • 8 4 2 7",best:"Ideal for GCC trade with 0% personal income tax."},
+    sa:{flag:"🇸🇦",name:"Saudi Arabia",reg:"Ministry of Investment (MISA)",entity:"LLC — MISA Licence",time:"3–8 weeks",req:"100% foreign ownership",no:"CR 4 0 3 • • • 9 1 6",best:"Ideal for Vision 2030 projects & the Arab world's biggest economy."}
+  };
+  var cert = document.getElementById("cert");
+  var certTabs = document.querySelectorAll(".cert-tabs button");
+  certTabs.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      certTabs.forEach(function(b){ b.setAttribute("aria-pressed","false"); });
+      btn.setAttribute("aria-pressed","true");
+      var d = JUR[btn.dataset.j];
+      cert.classList.remove("swap"); void cert.offsetWidth; cert.classList.add("swap");
+      document.getElementById("cFlag").textContent = d.flag;
+      scramble(document.getElementById("cName"), d.name);
+      document.getElementById("cReg").textContent = d.reg;
+      document.getElementById("cEntity").textContent = d.entity;
+      document.getElementById("cTime").textContent = d.time;
+      document.getElementById("cReq").textContent = d.req;
+      document.getElementById("cNo").textContent = d.no;
+      document.getElementById("cBest").textContent = d.best;
+    });
+  });
+
+  /* ---- Certificate tilt ---- */
+  if(!RM && window.matchMedia("(pointer:fine)").matches){
+    var wrap = document.querySelector(".cert-wrap");
+    wrap.addEventListener("mousemove", function(e){
+      var r = wrap.getBoundingClientRect();
+      var x = (e.clientX - r.left)/r.width - .5, y = (e.clientY - r.top)/r.height - .5;
+      cert.style.transform = "rotateY("+(x*7)+"deg) rotateX("+(-y*7)+"deg)";
+    });
+    wrap.addEventListener("mouseleave", function(){ cert.style.transform = ""; });
+  }
+
+  /* ---- FAQ accordion ---- */
+  document.querySelectorAll(".faq-item").forEach(function(item){
+    var q = item.querySelector(".faq-q"), a = item.querySelector(".faq-a");
+    q.addEventListener("click", function(){
+      var open = item.classList.toggle("open");
+      q.setAttribute("aria-expanded", open);
+      a.style.maxHeight = open ? a.scrollHeight + "px" : "0px";
+      document.querySelectorAll(".faq-item").forEach(function(other){
+        if(other !== item && other.classList.contains("open")){
+          other.classList.remove("open");
+          other.querySelector(".faq-q").setAttribute("aria-expanded","false");
+          other.querySelector(".faq-a").style.maxHeight = "0px";
+        }
+      });
+    });
+  });
+
+  /* ---- Fit Finder quiz ---- */
+  var scores = {uk:0,us:0,ca:0,in:0,qa:0,sa:0};
+  var step = 1;
+  var META = {
+    uk:{flag:"🇬🇧",name:"United Kingdom",why:"Fast, credible and globally bankable — perfect for selling anywhere from day one."},
+    us:{flag:"🇺🇸",name:"United States",why:"Maximum flexibility and payment power, with no residency hurdles whatsoever."},
+    ca:{flag:"🇨🇦",name:"Canada",why:"A stable North American base with strong banking and founder-friendly pathways."},
+    in:{flag:"🇮🇳",name:"India",why:"Direct access to a 1.4-billion market and world-class talent, fast."},
+    qa:{flag:"🇶🇦",name:"Qatar",why:"0% personal tax and a fast-growing gateway into the whole GCC."},
+    sa:{flag:"🇸🇦",name:"Saudi Arabia",why:"A front-row seat to Vision 2030, with 100% foreign ownership via MISA."}
+  };
+  function dots(){
+    for(var i=1;i<=3;i++){
+      var d = document.getElementById("qzp"+i);
+      d.className = i < step ? "done" : (i === step ? "now" : "");
+    }
+  }
+  function showStep(n){
+    document.querySelectorAll(".qz-step").forEach(function(s){
+      s.classList.toggle("on", parseInt(s.dataset.step,10) === n);
+    });
+    dots();
+  }
+  document.querySelectorAll(".qz-opt").forEach(function(opt){
+    opt.addEventListener("click", function(){
+      opt.dataset.s.split(" ").forEach(function(pair){
+        var kv = pair.split(":"); scores[kv[0]] += parseInt(kv[1],10);
+      });
+      step++;
+      if(step <= 3){ showStep(step); }
+      else{
+        var sorted = Object.keys(scores).sort(function(a,b){ return scores[b]-scores[a]; });
+        var top = sorted[0], second = sorted[1];
+        document.getElementById("qrFlag").textContent = META[top].flag;
+        document.getElementById("qrName").textContent = META[top].name;
+        document.getElementById("qrWhy").textContent = META[top].why;
+        document.getElementById("qrSecond").textContent = "Runner-up: " + META[second].flag + " " + META[second].name;
+        document.getElementById("qrCta").href = waLink(
+          "Hello Elepta! I used your Fit Finder and it recommended " + META[top].name +
+          " for my business (runner-up: " + META[second].name + "). Please share pricing and next steps.");
+        document.querySelectorAll(".qz-step").forEach(function(s){ s.classList.remove("on"); });
+        document.getElementById("qzResult").classList.add("on");
+        document.getElementById("qzp3").className = "done";
+      }
+    });
+  });
+  document.getElementById("qzRestart").addEventListener("click", function(){
+    scores = {uk:0,us:0,ca:0,in:0,qa:0,sa:0}; step = 1;
+    document.getElementById("qzResult").classList.remove("on");
+    showStep(1);
+  });
+  dots();
+
+  /* ---- Year ---- */
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
